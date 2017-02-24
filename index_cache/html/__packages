@@ -1,0 +1,6 @@
+base
+RPostgres
+devtools
+ggplot2
+plotly
+knitr

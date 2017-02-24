@@ -1,0 +1,37 @@
+---
+title       : Demo of slidify and Plotly
+subtitle    : Date - 2017-02-23
+author      : Keith Bailey
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+## Volume of sales activity per quarter
+```{r wp, echo=FALSE, warning=FALSE, cache=TRUE, results='asis', message=FALSE}
+## first slide
+
+
+#p1 <- sfdc_opportunity%>%filter(stagename=="W - Win")%>%group_by(closedate_year_qtr, sales_team)%>%summarise(sum=sum(amount_in_usd), n=n())%>%plot_ly(
+#  x = ~closedate_year_qtr,               # more about scatter's "x": /r/reference/#scatter-x
+#                y = ~n,            # more about scatter's "y": /r/reference/#scatter-y
+#                color=~sales_team,type = "bar")%>%
+#  layout(yaxis = list(title = 'Count'), barmode = 'stack')
+
+#p1
+
+# saveWidget(dplot, 'plotlyex1.html')
+#htmlwidgets::saveWidget(as.widget(p1), "wp.html")
+cat('<iframe src="wp.html" width=100% height=10% allowtransparency="true"> </iframe>')
+```
+
+--- 
+
+## Cleanliness of Sales Data
+- Point 1: We can see a nice transition to ADM over time
+- Point 2: We can also see a transition away from poorly tagged OTHER
+
+--- 
