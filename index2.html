@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exploring the Central Limit Theorem Through random number generation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Exploring the Central Limit Theorem Through random number generation">
+  <meta name="author" content="Keith Bailey">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Exploring the Central Limit Theorem Through random number generation</h1>
+    <h2>Date - 2017-01-01</h2>
+    <p>Keith Bailey<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Sample Size 25, 50, 75, 100</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The shiny app available, shows how we can explore the central limit theorem; Below shows the shiny output that would be achieved with 4 charts and sample size of 25 for the left chart.
+<iframe src="wp2.html" width=100% height=10% allowtransparency="true"> </iframe></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Sample Size 25, 50, 75, 100</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>We can see from these charts that as the number of observations goes up, estimate of the mean from each sample begins to look more and more normal</li>
+<li>Next we will increase the base sample size to be 250 to see how much more normal our data will become</li>
+<li>Using the shiny app, we can quickly and easily investigate the impact the number of trials an observations has on how close our sample is to the population from which we are sampling</li>
+<li>This tool is very much designed to help students understand why we can rely on samples statistics being accurate estimates of the population from which we are sampling</li>
+<li>I decided this would be useful following the statistical inference course; I had to build something similar to have this stick in my head and think other can benefit from this.</li>
+<li>What follows is a description of how to read the charts produced as a how to on the tool is available on the shiny page.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Sample Size 250 &gt;&gt; 1000</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Even with a sample size of 250 + we can see that it is not perfectly normal; Let us try to really push the observations up highly and see what happens</li>
+</ul>
+
+<iframe src="wp3.html" width=100% height=10% allowtransparency="true"> </iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Sample Size 250, 500, 750, 1000</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>&quot;The central limit theorem states that given a large sample size from a population the mean of all samples will be approximately equal to the mean of the population&quot; {quote investopedia}. This tool helps us explore this.</li>
+</ul>
+
+<iframe src="wp4.html" width=100% height=10% allowtransparency="true"> </iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Sample Size 25, 50, 75, 100'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Sample Size 25, 50, 75, 100'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Sample Size 250 &gt;&gt; 1000'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Sample Size 250, 500, 750, 1000'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
