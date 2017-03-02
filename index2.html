@@ -43,6 +43,32 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
+    <h2>Start with building some initial data and looking at the method</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Build data frame of randomly generated numbers - we will use this throughout to</li>
+</ul>
+
+<pre><code class="r">k &lt;- data.frame(x= numeric(0), size= numeric(0))
+
+charts&lt;-4
+nosim&lt;-25
+for (mul in 1:charts){
+  x &lt;- apply(matrix(sample(1 : 6, nosim * mul, replace = TRUE), 
+                    nosim), 1, mean)
+  x&lt;-data.frame(x,size=mul)
+  k&lt;-rbind(k,x)
+}
+k&lt;-as.data.frame(k)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
     <h2>Sample Size 25, 50, 75, 100</h2>
   </hgroup>
   <article data-timings="">
@@ -55,7 +81,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-2" style="background:;">
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
     <h2>Sample Size 25, 50, 75, 100</h2>
   </hgroup>
@@ -73,7 +99,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-3" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
     <h2>Sample Size 250 &gt;&gt; 1000</h2>
   </hgroup>
@@ -88,7 +114,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-4" style="background:;">
+<slide class="" id="slide-5" style="background:;">
   <hgroup>
     <h2>Sample Size 250, 500, 750, 1000</h2>
   </hgroup>
@@ -109,7 +135,7 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Sample Size 25, 50, 75, 100'>
+        data-slide=1 title='Start with building some initial data and looking at the method'>
          1
       </a>
     </li>
@@ -121,14 +147,20 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Sample Size 250 &gt;&gt; 1000'>
+        data-slide=3 title='Sample Size 25, 50, 75, 100'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Sample Size 250, 500, 750, 1000'>
+        data-slide=4 title='Sample Size 250 &gt;&gt; 1000'>
          4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Sample Size 250, 500, 750, 1000'>
+         5
       </a>
     </li>
   </ul>

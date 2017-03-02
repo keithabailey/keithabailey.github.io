@@ -13,6 +13,27 @@ knit        : slidify::knit2slides
 
 
 
+## Start with building some initial data and looking at the method
+
+- Build data frame of randomly generated numbers - we will use this throughout to
+
+
+```r
+k <- data.frame(x= numeric(0), size= numeric(0))
+
+charts<-4
+nosim<-25
+for (mul in 1:charts){
+  x <- apply(matrix(sample(1 : 6, nosim * mul, replace = TRUE), 
+                    nosim), 1, mean)
+  x<-data.frame(x,size=mul)
+  k<-rbind(k,x)
+}
+k<-as.data.frame(k)
+```
+
+---
+
 
 
 ## Sample Size 25, 50, 75, 100
